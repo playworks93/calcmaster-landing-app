@@ -4,12 +4,12 @@ CalcMaster - Built with React + TypeScript + Vite
 
 ## Features
 
-- User Authentication & Onboarding
 - Basic Arithmetic Operations
-- Advanced Calculations (e.g., Trigonometry, Logarithms)
+- Advanced Functions (e.g., Trigonometry, Logarithms)
+- History Log of Calculations
 - Collaborative Calculation Sessions
-- AI-Powered Suggestions
-- History of Calculations
+- Customizable Interface Themes
+- Voice Input for Calculations
 
 ## Tech Stack
 
