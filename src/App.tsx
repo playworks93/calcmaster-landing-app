@@ -1,11 +1,11 @@
 import { useState } from 'react'
 import Dashboard from './components/Dashboard'
 import Auth from './components/Auth'
-import AuthComponent from './components/AuthComponent'
-import CalculatorComponent from './components/CalculatorComponent'
-import HistoryComponent from './components/HistoryComponent'
-import CollaborationComponent from './components/CollaborationComponent'
-import ThemeSwitcherComponent from './components/ThemeSwitcherComponent'
+import CalculatorDisplay from './components/CalculatorDisplay'
+import CalculatorButton from './components/CalculatorButton'
+import HistoryLog from './components/HistoryLog'
+import SessionManager from './components/SessionManager'
+import ThemeSelector from './components/ThemeSelector'
 
 function App() {
   const [isAuthenticated, setIsAuthenticated] = useState(false)
@@ -23,7 +23,7 @@ function App() {
       <header className="app-header">
         <div className="header-content">
           <h1>CalcMaster</h1>
-          <p className="tagline">Your Smart Productivity Calculator</p>
+          <p className="tagline">Effortless Calculations, Endless Possibilities</p>
         </div>
         {isAuthenticated && (
           <button onClick={handleLogout} className="btn-logout">
@@ -44,12 +44,12 @@ function App() {
         <div className="features">
           <h3>Key Features:</h3>
           <ul>
-          <li>User Authentication & Onboarding</li>
           <li>Basic Arithmetic Operations</li>
-          <li>Advanced Calculations (e.g., Trigonometry, Logarithms)</li>
+          <li>Advanced Functions (e.g., Trigonometry, Logarithms)</li>
+          <li>History Log of Calculations</li>
           <li>Collaborative Calculation Sessions</li>
-          <li>AI-Powered Suggestions</li>
-          <li>History of Calculations</li>
+          <li>Customizable Interface Themes</li>
+          <li>Voice Input for Calculations</li>
           </ul>
         </div>
         <p>&copy; 2025 CalcMaster. Built with React + TypeScript + Vite</p>
